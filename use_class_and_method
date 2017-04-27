@@ -33,7 +33,7 @@ class MyClass
 }
 
 $test1=new MyClass("Утка");
-$test1->method1();				  //Выводит "Утка молчит"
+$test1->method1();			//Выводит "Утка молчит"
 $test1->method1("Кря");			//Выводит "Утка делает Кря"
 if (defined("MyClass::EYES"))
 {	//Если константа определена
@@ -41,7 +41,7 @@ if (defined("MyClass::EYES"))
 }
 
 $test2=new MyClass("Лягушка",2);
-$test2->method1();				  //Выводит "Лягушка молчит"
+$test2->method1();			//Выводит "Лягушка молчит"
 $test2->method1("Ква");			//Выводит "Лягушка делает Ква"
 if (defined("MyClass::EYES"))
 {
