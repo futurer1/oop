@@ -26,17 +26,23 @@ class A //создаем класс на основе двух трейтов
 {
     use TA, TB
     {
-        TA::tA insteadof TB;  //выбираем среди одинаковых конфликтующих метод tA из трейта TA
+        TB::tA insteadof TA;  //выбираем среди одноименных конфликтующих методов tA из трейта TA
+        //для эксперимента можно попробовать:
+        //TA::tA insteadof TB;
     }
     
     public function showPrivateX() {
         echo $this->x ."<br />";
     }
+    
+    public function callPrivateMethod(){    //вызывает private метод tA из того трейта, который определем конструкцией insteadof
+		$this->tA();
+	}
 }
 
 $a = new A;
-$a->showPrivateX();    //через публичный метод showPrivateX выводим значение приватной переменной $x="TA"
-$a->tA();              //выводим строку "method trait TA<br />"
+$a->showPrivateX();         //через публичный метод showPrivateX выводим значение приватной переменной $x="TA"
+$a->callPrivateMethod();    //выводим строку "method trait TB<br />"
 ?>
 </body>
 </html>
