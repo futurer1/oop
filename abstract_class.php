@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Абстрактный класс testClass с абстрактным методом testMethod внутри него.</title>
+    <title>Абстрактный класс testClass с абстрактным методом testMethod внутри него</title>
 </head>
 <body><?php
 abstract class TestClass    //Это абстрактный класс, он не может быть использовал для создания объектов, только для наследования
