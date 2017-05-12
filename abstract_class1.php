@@ -11,8 +11,8 @@ abstract class TestClass2
 class TestClass3 extends TestClass2
 {
     public function testMethod(         //ошибки не будет, потому что мы задали значения по умолчанию
-        $var1="значение по умолчанию", 
-        $var2=array()
+        $var1 = "значение по умолчанию", 
+        $var2 = array()
     ) {
     }
 }
