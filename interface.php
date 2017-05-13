@@ -28,7 +28,7 @@ interface ActivityInterface extends DachaInterface  //Интерфейс "Тру
 class DachaSlacker implements RestInterface        //класс Бездельника в Деревне
 {
     public function info() {              //унаследованный метод из интерфейса DachaInterface
-        echo "Адрес дачи бездельника: улица, дом<br />";
+        echo "Адрес дачи бездельника: улица, дом.<br />";
     }
     
     public function barbecueMethod() {    //унаследованный метод из интерфейса RestInterface
@@ -56,11 +56,11 @@ class DachaUniversal implements RestInterface, ActivityInterface    //класс
                                                                     //который может и отдыхать и работать
 {
     public function info() {    //унаследованный метод из интерфейса DachaInterface
-        echo "Адрес дачи универсала: улица, дом<br />";
+        echo "Адрес дачи универсала: улица, дом.<br />";
     }
 
     public function barbecueMethod() {  //унаследованный метод из интерфейса RestInterface
-        echo "Жарит шашлыки на углях<br />";
+        echo "Жарит шашлыки на углях.<br />";
     }
     
     public function sunbatheMethod() {    //унаследованный метод из интерфейса RestInterface
