@@ -1,3 +1,4 @@
+<?php
 class Class1
 {
     public $class1_var1="A";
@@ -27,3 +28,4 @@ function grab_data(array $tmp)  //на вход массив из объекто
 }
 
 grab_data($mas_obj);
+?>
