@@ -14,10 +14,10 @@ class Class2
 
 $mas_obj = array(new Class1, new Class2, new Class1, new Class1, new Class2);
 
-//Функция, которая ограбит объекты разных классов и выведет из них значения публичных свойств
+//Функция, которая "ограбит" объекты разных классов и выведет из них значения публичных свойств
 function grab_data(array $tmp)  //на вход массив из объектов без названий
 {
-    foreach($tmp as $value) {
+    foreach($tmp as $value) {   //цикл по объектам из массива
         if($value instanceof Class1){           //если объект класса Class1
             echo $value->class1_var1." - " .$value->class1_var2. " - " .$value->class1_var3. "<br />";
         } else if($value instanceof Class2){    //если объект класса Class2
