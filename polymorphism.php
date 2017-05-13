@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Урок 5. Изучение полиморфизма</title>
+    <title>Полиморфизм</title>
 </head>
 <body><?php
 abstract class Publication          //Данный класс существует только для целей создания на его базе других классов
