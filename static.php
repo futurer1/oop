@@ -1,9 +1,9 @@
 <?php
 header('Content-type: text/html; charset=win-1251');
-//Источник:		https://habrahabr.ru/post/259627/
+//Источник расширенных знаний:		https://habrahabr.ru/post/259627/
 ?><html>
 <head>
-    <title>Урок 3. Изучение static</title>
+    <title>Static</title>
 </head>
 <body>
 <?php
@@ -44,7 +44,8 @@ class ModelA
     public static $valA=100;	//статическая переменная
     public static function returnVal()
     {
-        return self::$valA;	//ссылается не на потомков и не на объект, а на тот класс, где была объявлена переменная (compile time static binding)
+        return self::$valA;	//ссылается не на потомков и не на объект, а на тот класс, 
+	    			//где была объявлена переменная (compile time static binding)
     }
 }
 $a=new ModelA;
