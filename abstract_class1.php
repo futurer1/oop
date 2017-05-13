@@ -16,4 +16,5 @@ class TestClass3 extends TestClass2
     ) {
     }
 }
-?>
+?></body>
+</html>
