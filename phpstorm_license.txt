@@ -1,0 +1,2 @@
+Дока по лицензированию версий 2016.2 — 2016.3
+http://maytm.ru/phpstorm-license-server
